@@ -1,36 +1,47 @@
 'use strict';
     document.addEventListener('DOMContentLoaded', function() {
         
+     
+        
+var keyA = document.querySelector('[data-key="a"]');
+var keyS = document.querySelector('[data-key="s"]');
+var keyD = document.querySelector('[data-key="d"]');
+var keyF = document.querySelector('[data-key="f"]');
+var keyG = document.querySelector('[data-key="g"]');
+var keyH = document.querySelector('[data-key="h"]');
+var keyJ = document.querySelector('[data-key="j"]');
+var keyK = document.querySelector('[data-key="k"]');
+var keyL = document.querySelector('[data-key="l"]');
         
 function keyDownSound(e) {
   var keyCode = e.keyCode;
     switch (keyCode) {
         case 65:
-        alert("you hit a key");
+        keyA.classList.add('klick');
         break;
         case 83:
-        alert("you hit s key");
+        keyS.classList.add('klick');
         break;
         case 68:
-        alert("you hit d key");
+        keyD.classList.add('klick');
         break;
         case 70:
-        alert("you hit f key");
+        keyF.classList.add('klick');
         break;
         case 71:
-        alert("you hit g key");
+        keyG.classList.add('klick');
         break;
         case 72:
-        alert("you hit h key");
+        keyH.classList.add('klick');
         break;
         case 74:
-        alert("you hit j key");
+        keyJ.classList.add('klick');
         break;
         case 75:
-        alert("you hit k key");
+        keyK.classList.add('klick');
         break;
         case 76:
-        alert("you hit l key");
+        keyL.classList.add('klick');
         break;
     }
     

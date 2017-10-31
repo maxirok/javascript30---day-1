@@ -44,11 +44,11 @@ body {
     box-shadow: 0 8px 0 #808080, 0 15px 20px rgba(0, 0, 0, .35);
 }
 
-.flex-item:active {
-    -webkit-box-shadow:    0 4px 0 #808080; 
+.klick {
+    -webkit-box-shadow: 0 4px 0 #808080; 
     -moz-box-shadow: 0 4px 0 #808080;
     box-shadow: 0 4px 0 #808080;
-  transform: translateY(4px);
+    transform: translateY(4px);
 }
 
 .letter {
