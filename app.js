@@ -46,10 +46,47 @@ function keyDownSound(e) {
     }
     
 
-}
+};
+        
+function keyUpSound(e) {
+  var keyCode = e.keyCode;
+    switch (keyCode) {
+        case 65:
+        keyA.classList.remove('klick');
+        break;
+        case 83:
+        keyS.classList.remove('klick');
+        break;
+        case 68:
+        keyD.classList.remove('klick');
+        break;
+        case 70:
+        keyF.classList.remove('klick');
+        break;
+        case 71:
+        keyG.classList.remove('klick');
+        break;
+        case 72:
+        keyH.classList.remove('klick');
+        break;
+        case 74:
+        keyJ.classList.remove('klick');
+        break;
+        case 75:
+        keyK.classList.remove('klick');
+        break;
+        case 76:
+        keyL.classList.remove('klick');
+        break;
+    }
+    
+
+};
+
 
         
 document.addEventListener("keydown", keyDownSound);
+document.addEventListener("keyup", keyUpSound);
         
         
         
