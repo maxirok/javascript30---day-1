@@ -3,45 +3,54 @@
         
      
         
-var keyA = document.querySelector('[data-key="a"]');
-var keyS = document.querySelector('[data-key="s"]');
-var keyD = document.querySelector('[data-key="d"]');
-var keyF = document.querySelector('[data-key="f"]');
-var keyG = document.querySelector('[data-key="g"]');
-var keyH = document.querySelector('[data-key="h"]');
-var keyJ = document.querySelector('[data-key="j"]');
-var keyK = document.querySelector('[data-key="k"]');
-var keyL = document.querySelector('[data-key="l"]');
+var keyA = document.querySelectorAll('[data-key="a"]');
+var keyS = document.querySelectorAll('[data-key="s"]');
+var keyD = document.querySelectorAll('[data-key="d"]');
+var keyF = document.querySelectorAll('[data-key="f"]');
+var keyG = document.querySelectorAll('[data-key="g"]');
+var keyH = document.querySelectorAll('[data-key="h"]');
+var keyJ = document.querySelectorAll('[data-key="j"]');
+var keyK = document.querySelectorAll('[data-key="k"]');
+var keyL = document.querySelectorAll('[data-key="l"]');
         
 function keyDownSound(e) {
   var keyCode = e.keyCode;
     switch (keyCode) {
         case 65:
-        keyA.classList.add('klick');
+        keyA[0].classList.add('klick');
+        keyA[1].play();
         break;
         case 83:
-        keyS.classList.add('klick');
+        keyS[0].classList.add('klick');
+        keyS[1].play();
         break;
         case 68:
-        keyD.classList.add('klick');
+        keyD[0].classList.add('klick');
+        keyD[1].play();
         break;
         case 70:
-        keyF.classList.add('klick');
+        keyF[0].classList.add('klick');
+        keyF[1].play();
         break;
         case 71:
-        keyG.classList.add('klick');
+        keyG[0].classList.add('klick');
+        keyG[1].play();
         break;
         case 72:
-        keyH.classList.add('klick');
+        keyH[0].classList.add('klick');
+        keyH[1].play();
         break;
         case 74:
-        keyJ.classList.add('klick');
+        keyJ[0].classList.add('klick');
+        keyJ[1].play();
         break;
         case 75:
-        keyK.classList.add('klick');
+        keyK[0].classList.add('klick');
+        keyK[1].play();
         break;
         case 76:
-        keyL.classList.add('klick');
+        keyL[0].classList.add('klick');
+        keyL[1].play();
         break;
     }
     
@@ -52,31 +61,31 @@ function keyUpSound(e) {
   var keyCode = e.keyCode;
     switch (keyCode) {
         case 65:
-        keyA.classList.remove('klick');
+        keyA[0].classList.remove('klick');
         break;
         case 83:
-        keyS.classList.remove('klick');
+        keyS[0].classList.remove('klick');
         break;
         case 68:
-        keyD.classList.remove('klick');
+        keyD[0].classList.remove('klick');
         break;
         case 70:
-        keyF.classList.remove('klick');
+        keyF[0].classList.remove('klick');
         break;
         case 71:
-        keyG.classList.remove('klick');
+        keyG[0].classList.remove('klick');
         break;
         case 72:
-        keyH.classList.remove('klick');
+        keyH[0].classList.remove('klick');
         break;
         case 74:
-        keyJ.classList.remove('klick');
+        keyJ[0].classList.remove('klick');
         break;
         case 75:
-        keyK.classList.remove('klick');
+        keyK[0].classList.remove('klick');
         break;
         case 76:
-        keyL.classList.remove('klick');
+        keyL[0].classList.remove('klick');
         break;
     }
     
